@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="computersecurityproject.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="640.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@images/background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="Headder1" prefHeight="30.0" prefWidth="640.0" AnchorPane.bottomAnchor="330.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle fill="WHITE" height="30.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="9.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="616.170000076294" AnchorPane.topAnchor="2.0">
+               <image>
+                  <Image url="@icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="HomeLabel" alignment="CENTER" layoutX="207.0" layoutY="7.0" onMouseClicked="#home" text="Home" textAlignment="CENTER" textFill="#707070" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="189.0" AnchorPane.rightAnchor="412.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+               </cursor></Label>
+            <Label fx:id="EncryptionLabel" alignment="CENTER" layoutX="217.0" layoutY="17.0" onMouseClicked="#encryption" text="Cryptography" textAlignment="CENTER" textFill="#707070" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="316.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Label>
+            <Label fx:id="HashingLabel" alignment="CENTER" layoutX="227.0" layoutY="27.0" onMouseClicked="#hashing" text="Hashing" textAlignment="CENTER" textFill="#707070" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="333.0" AnchorPane.rightAnchor="256.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Label>
+            <Label fx:id="AboutUsLabel" alignment="CENTER" layoutX="227.0" layoutY="27.0" onMouseClicked="#about" text="About us" textAlignment="CENTER" textFill="#707070" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="395.0" AnchorPane.rightAnchor="189.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Label>
+            <Label fx:id="Close" alignment="TOP_CENTER" layoutX="595.0" layoutY="6.0" onMouseClicked="#close" text="x" textAlignment="CENTER" textFill="#310069" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="615.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Label>
+            <Label fx:id="Minimize" alignment="TOP_CENTER" layoutX="605.0" layoutY="16.0" onMouseClicked="#minimize" text="-" textAlignment="JUSTIFY" textFill="#310069" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="595.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Fotter" layoutX="590.0" prefHeight="50.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="310.0">
+         <children>
+            <Rectangle fill="WHITE" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label layoutX="9.0" layoutY="16.0" text="Group 2 Computer Security Project" textFill="#707070" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="312.0" AnchorPane.topAnchor="13.0">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="429.0" layoutY="14.0" onMouseClicked="#about" text="About us" textFill="#707070" underline="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="13.0">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Home" prefHeight="280.0" prefWidth="640.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#310069cc" height="200.0" layoutX="130.0" layoutY="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="343.0" AnchorPane.topAnchor="50.0" />
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#310069cc" height="200.0" layoutX="134.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="343.0" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="50.0" />
+            <Label alignment="CENTER" layoutX="176.0" layoutY="99.0" text="CRYPTOGRAPHY" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="343.0" AnchorPane.topAnchor="85.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="186.0" layoutY="109.0" text="HASHING" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="385.0" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="85.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="54.43" fitWidth="41.87" layoutX="105.0" layoutY="99.0" opacity="0.4" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="102.8" AnchorPane.leftAnchor="192.1" AnchorPane.rightAnchor="406.0300010681152" AnchorPane.topAnchor="122.19999999999999">
+               <image>
+                  <Image url="@images/watermark.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.43" fitWidth="41.87" layoutX="115.0" layoutY="109.0" opacity="0.4" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="102.8" AnchorPane.leftAnchor="406.9" AnchorPane.rightAnchor="191.1" AnchorPane.topAnchor="122.19999999999999">
+               <image>
+                  <Image url="@images/watermark.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="94.0" layoutY="184.0" text="Encrypt/Decrypt your file using AES/DES" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="343.0" AnchorPane.topAnchor="188.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="352.0" layoutY="193.0" text="Digest your file using SHA256/SHA512" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="343.0" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="188.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Rectangle fx:id="rec_Encryption" arcHeight="20.0" arcWidth="20.0" fill="#310069cc" height="200.0" layoutX="140.0" layoutY="64.0" onMouseClicked="#encryption" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="343.0" AnchorPane.topAnchor="50.0">
+               <cursor>
+               </cursor></Rectangle>
+            <Rectangle fx:id="rec_Hashing" arcHeight="20.0" arcWidth="20.0" fill="#310069cc" height="200.0" layoutX="150.0" layoutY="74.0" onMouseClicked="#hashing" opacity="0.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="170.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="343.0" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="50.0">
+               <cursor>
+               </cursor></Rectangle>
+            <AnchorPane fx:id="Done" layoutX="90.0" layoutY="151.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#done" prefHeight="127.0" prefWidth="338.0" visible="false" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="151.0" AnchorPane.topAnchor="90.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="127.0" stroke="#707070" strokeType="INSIDE" width="338.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#done" style="-fx-background-color: #270063; -fx-background-radius: 8;" text="Done" textFill="WHITE" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="87.0">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                     <cursor>
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="79.0" layoutY="43.0" text="Operation Completed Successfully" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="11.0">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="outputFile" alignment="TOP_LEFT" layoutX="23.0" layoutY="63.0" text="output file:" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="46.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="About" layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="640.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#310069" height="251.0" layoutX="186.0" layoutY="59.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="430.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="41.0" />
+            <Label alignment="CENTER" layoutX="285.0" layoutY="76.0" text="About us" textFill="WHITE" AnchorPane.bottomAnchor="257.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Button graphicTextGap="10.0" layoutX="293.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#home" style="-fx-background-color: #270063; -fx-background-radius: 8;" text="Close" textFill="WHITE" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="261.0" AnchorPane.topAnchor="244.0">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <cursor>
+               </cursor></Button>
+            <Label alignment="BOTTOM_LEFT" layoutX="286.0" layoutY="110.0" text="Mohammed Alhusayni&#10;Yamin Alrehaili&#10;Abdul-Hakem Hashim" textFill="#d0d0d0" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="156.0">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="296.0" layoutY="120.0" text="Group Members:" textFill="WHITE" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="156.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="306.0" layoutY="130.0" text="This  tool  helps  with cryptographic applications &#10;(E.g. encrypt/decrypt using AES , DES or &#10;Hashing)" textFill="#d0d0d0" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="75.0">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="Encryption" layoutX="10.0" layoutY="10.0" prefHeight="330.0" prefWidth="640.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <AnchorPane fx:id="Enp1" prefHeight="251.0" prefWidth="430.0" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="41.0">
+               <children>
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#310069" height="251.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label alignment="CENTER" text="Cryptographic" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="186.0" layoutY="96.0" text="Cipher mode:" textFill="WHITE" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="260.0" AnchorPane.topAnchor="53.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="encryptionMood" layoutX="174.0" layoutY="142.0" mnemonicParsing="false" selected="true" text="Encrypt" textFill="WHITE" AnchorPane.bottomAnchor="141.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="87.0">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="EnDe" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="decryptionMood" layoutX="184.0" layoutY="152.0" mnemonicParsing="false" text="Decrypt" textFill="WHITE" toggleGroup="$EnDe" AnchorPane.bottomAnchor="141.0" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="87.0">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="196.0" layoutY="106.0" text="Cipher Algorithm:" textFill="WHITE" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="122.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="DESalgorithem" layoutX="184.0" layoutY="152.0" mnemonicParsing="false" selected="true" text="DES" textFill="WHITE" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="99.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="160.0">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="ENDA" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="AESalgorithem" layoutX="194.0" layoutY="162.0" mnemonicParsing="false" text="AES" textFill="WHITE" toggleGroup="$ENDA" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="93.0" AnchorPane.topAnchor="160.0">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                  </RadioButton>
+                  <Button graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#checkEncryptionPart1" style="-fx-background-color: #270063; -fx-background-radius: 8;" text="Next" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="204.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <cursor>
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Enp2" layoutX="10.0" layoutY="10.0" prefHeight="251.0" prefWidth="430.0" visible="false" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="41.0">
+               <children>
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#310069" height="251.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="430.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label fx:id="EncryptionPage2Label" alignment="CENTER" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="222.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Segoe UI" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="EncryptDecrept" graphicTextGap="10.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#checkEncryptionPart2" style="-fx-background-color: #270063; -fx-background-radius: 8;" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="156.0" AnchorPane.topAnchor="204.0">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                     <cursor>
+                     </cursor>
+                  </Button>
+                  <Button graphicTextGap="10.0" layoutX="154.0" layoutY="140.0" mnemonicParsing="false" onAction="#fileChooser" style="-fx-background-color: #2F0274; -fx-background-radius: 6;" text="Choose File" textFill="WHITE" AnchorPane.bottomAnchor="97.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="122.0">
+                     <font>
+                        <Font name="Segoe UI" size="17.0" />
+                     </font>
+                     <cursor>
+                     </cursor>
+                  </Button>
+                  <Label layoutX="196.0" layoutY="106.0" text="Enter a key:" textFill="WHITE" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="266.0" AnchorPane.topAnchor="53.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="keyTextField" layoutX="123.0" layoutY="88.0" onKeyPressed="#checkTextField" promptText="Key" style="-fx-background-color: #451180; -fx-background-radius: 10; -fx-text-fill: #ffffff;" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="81.0">
+                     <cursor>
+                     </cursor>
+                  </TextField>
+                  <Label fx:id="encryptionError" alignment="CENTER" layoutX="176.0" layoutY="176.0" textAlignment="CENTER" textFill="#878787d9" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pathLabel" alignment="CENTER" layoutX="186.0" layoutY="186.0" textAlignment="CENTER" textFill="#878787d9" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="Hashing" layoutX="20.0" layoutY="20.0" prefHeight="330.0" prefWidth="640.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
+         <children>
+            <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#310069" height="251.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="430.0" AnchorPane.bottomAnchor="39.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="40.0" />
+            <Label alignment="CENTER" text="Hashing" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="228.0" AnchorPane.rightAnchor="228.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <Button alignment="TOP_CENTER" graphicTextGap="10.0" mnemonicParsing="false" onMouseClicked="#checkHashing" style="-fx-background-color: #270063; -fx-background-radius: 8;" text="Digest" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="261.0" AnchorPane.topAnchor="244.0">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Button>
+            <Label layoutX="176.0" layoutY="86.0" text="Digest mode:" textFill="WHITE" AnchorPane.bottomAnchor="210.0" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="371.0" AnchorPane.topAnchor="93.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button graphicTextGap="10.0" layoutX="144.0" layoutY="130.0" mnemonicParsing="false" onAction="#fileChooser" style="-fx-background-color: #2F0274; -fx-background-radius: 6;" text="Choose File" textFill="WHITE" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="375.0" AnchorPane.topAnchor="161.0">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <cursor>
+               </cursor>
+            </Button>
+            <RadioButton fx:id="SHA256" layoutX="164.0" layoutY="132.0" mnemonicParsing="false" selected="true" text="SHA256" textFill="WHITE" AnchorPane.bottomAnchor="179.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="345.0" AnchorPane.topAnchor="128.0">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="SHA" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="SHA512" layoutX="174.0" layoutY="142.0" mnemonicParsing="false" text="SHA512" textFill="WHITE" toggleGroup="$SHA" AnchorPane.bottomAnchor="179.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="203.0" AnchorPane.topAnchor="128.0">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="pathLabelHash" alignment="CENTER" textAlignment="CENTER" textFill="#878787d9" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="201.0">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="hashError" alignment="CENTER" textAlignment="CENTER" textFill="#878787d9" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="221.0">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="busy" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
