@@ -2,7 +2,7 @@
 Cryptography and Hashing tool that can be used to encrypt and decrypt files using either DES or AES. Also, it can be used for Hashing(SHA256 and SHA512). It is proposed as a course project for Computer Security(CS 433) course at Taibah University.
 
 ## Main Features: 
-###Cryptography:
+### Cryptography:
 * Encrypt Using DES
 * Encrypt Using AES
 * Decrypt Using DES
@@ -26,7 +26,7 @@ Cryptography and Hashing tool that can be used to encrypt and decrypt files usin
 
 
 ### Test Run
-Senario : Encrypt a text file containing "Hello World" using DES with a key "MOHAMMED".
+Senario : Encrypt a text file containing "Hello World" using DES with the key "MOHAMMED".
 * Step 1 - Navigate to Cryptography Page, then choose "Encrypt" Cipher Mode and "DES" Cipher Algorithm.
 ![Slide4](https://user-images.githubusercontent.com/80723154/221931651-95b0cd41-4883-43a8-88ac-727980bacc98.PNG)
 * Step 2 - Enter the Key "MOHAMMED" and select the file.
