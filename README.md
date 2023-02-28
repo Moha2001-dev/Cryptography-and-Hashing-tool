@@ -7,7 +7,9 @@ Cryptography and Hashing tool that can be used to encrypt and decrypt files usin
 * Encrypt Using AES
 * Decrypt Using DES
 * Decrypt Using AES
-###Cryptography:
+
+
+### Hashing:
 * Hashing Using SHA256
 * Hashing Using SHA512
 
